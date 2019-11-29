@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AgregarCursos"
+    tools:showIn="@layout/activity_agregar_cursos">
+
+    <EditText
+        android:id="@+id/inputHorario_HorasCurso"
+        android:layout_width="270dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:hint="Ingrese horas trabajadas en la semana"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputHorario_DiasCurso" />
+
+    <TextView
+        android:id="@+id/textSemestre"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:text="Semestre"
+        app:layout_constraintBottom_toTopOf="@+id/inputSemestreCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNombreCurso" />
+
+    <TextView
+        android:id="@+id/textCreditos"
+        android:layout_width="297dp"
+        android:layout_height="36dp"
+        android:text="Creditos"
+        app:layout_constraintBottom_toTopOf="@+id/inputCreditosCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSemestreCurso" />
+
+    <EditText
+        android:id="@+id/inputSemestreCurso"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textCreditos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSemestre" />
+
+    <EditText
+        android:id="@+id/inputNombreCurso"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textSemestre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombreCurso" />
+
+    <EditText
+        android:id="@+id/inputCreditosCurso"
+        android:layout_width="287dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textHorarioCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCreditos" />
+
+    <EditText
+        android:id="@+id/inputHorario_DiasCurso"
+        android:layout_width="279dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Ingrese los dias del horario del curso"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/inputHorario_HorasCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHorarioCurso" />
+
+    <TextView
+        android:id="@+id/textNombreCurso"
+        android:layout_width="291dp"
+        android:layout_height="20dp"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/inputNombreCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="158dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/textNombreCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libros" />
+
+    <TextView
+        android:id="@+id/textHorarioCurso"
+        android:layout_width="283dp"
+        android:layout_height="39dp"
+        android:text="Horario"
+        app:layout_constraintBottom_toTopOf="@+id/inputHorario_DiasCurso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCreditosCurso" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
