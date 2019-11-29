@@ -10,5 +10,7 @@
         <item>Audio</item>
         <item>Foto</item>
         <item>Mostrar Horario</item>
-    </string-array>>
+    </string-array>
+    <string name="title_activity_audio">Audio</string>
+    >
 </resources>

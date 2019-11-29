@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Spinner_"></activity>
+        <activity
+            android:name=".Audio"
+            android:label="@string/title_activity_audio"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Spinner_" />
         <activity android:name=".MenuCursos" />
         <activity
             android:name=".AgregarCursos"
